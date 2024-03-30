@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PomoFocus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d63c915691.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Pomodoro Timer</h1>
+            <div class="content">
+                <div class="intro">
+                    <p>The Pomodoro Technique, devised by Francesco Cirillo, divides work into 25-minute intervals with short breaks in between, aiming to boost focus and productivity. Introduced in the late '80s, it fosters efficient time management by encouraging brief, concentrated work sessions followed by regular pauses, enhancing overall workflow and productivity.</p>
+                </div>
+                <div class="benefit">
+                    <p>The Pomodoro Timer technique enhances productivity by dividing work into manageable intervals, typically 25 minutes, followed by short breaks. This method optimizes focus, minimizes distractions, fosters a sense of urgency, and prevents mental fatigue, resulting in improved efficiency and task completion.</p>
+                </div>
+                <div class="efficiency">
+                    <p>To maximize the effectiveness of the Pomodoro Timer, start by setting a clear goal for each work session. Focus intently during the 25-minute interval, avoiding distractions. Take short breaks to recharge and maintain productivity. Track progress and adjust intervals as needed. Consistent use enhances concentration, time management, and overall productivity.</p>
+                </div>
+            </div>
+            <div>
+                <p>"Time to focus: Pomodoro starts now!"</p>
+            </div>
+            <div class="bar">
+                <p id="focus">Focus</p>
+                <i class="fa-regular fa-clock"></i>
+                <p id="break">Break</p>
+            </div>
+            <div class="timer">
+                <div class="clock">
+                    <div class="time">
+                        <p id="min"></p>
+                        <p>:</p>
+                        <p id="sec"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="start" onclick="start()">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="pause" onclick="pause()">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button id="restart" onclick="restart()">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
